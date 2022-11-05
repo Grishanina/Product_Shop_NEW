@@ -35,19 +35,11 @@ namespace WpfApp1
 				}
 			}
 		}
-		public string Manufact
+		public string Manufact_Provider
 		{
 			get
 			{
-				return "Производитель: " + T_Manufacturer.Manufacturer; 
-			}
-		}
-
-		public string Provider
-		{
-			get
-			{
-				return "Поставщик: " + T_Provider.Provider;
+				return "Производ.: " + T_Manufacturer.Manufacturer + " | " + "Постав.:" + T_Provider.Provider; 
 			}
 		}
 	}

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,7 +64,7 @@ namespace WpfApp1
 				pr += Convert.ToDouble(prd.Price);
 			}
 
-			tb.Text = "Цена со скидкой: " + sum.ToString("F2") + " руб. (Без скидки: " + pr.ToString("F2") + " руб.)";
+			tb.Text = "Цена: " + sum.ToString("F2") + " руб. (Без скидки: " + pr.ToString("F2") + " руб.)";
 		}
 
 
@@ -84,6 +85,23 @@ namespace WpfApp1
 			}
 
 			tb.Text = "Скидка: " + dis.ToString() + " %";
+		}
+
+		private void btnCreateProduct_Click(object sender, RoutedEventArgs e)
+		{
+			Class1.Mfrm.Navigate(new CreateProduct());
+		}
+
+		private void btnupdate_Click(object sender, RoutedEventArgs e)
+		{
+			Button btn = (Button)sender;  // получаем доступ к Button из шаблона
+			int index = Convert.ToInt32(btn.Uid);   // получаем числовой Uid элемента списка (в разметке предварительно нужно связать номер ячейки с номером кота в базе данных)
+
+			// создаем объект, который содержит кота, информацию о котором нужно отредактировать
+			T_Product product = ClassBase.BD.T_Product.FirstOrDefault(x => x.id_product == index);
+
+			// переход на страницу с редактированием (на ту же самую, где и добавляли кота)
+			Class1.Mfrm.Navigate(new CreateProduct(product));
 		}
 	}
 }

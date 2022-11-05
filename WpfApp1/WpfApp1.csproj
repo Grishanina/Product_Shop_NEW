@@ -66,6 +66,9 @@
     </ApplicationDefinition>
     <Compile Include="Class1.cs" />
     <Compile Include="ClassBase.cs" />
+    <Compile Include="CreateProduct.xaml.cs">
+      <DependentUpon>CreateProduct.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Discount_Color.cs" />
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -133,6 +136,10 @@
     <Compile Include="T_Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Page Include="CreateProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MainAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

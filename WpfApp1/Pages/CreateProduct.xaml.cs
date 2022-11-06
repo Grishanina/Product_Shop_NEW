@@ -109,7 +109,7 @@ namespace WpfApp1
 				PRO.id_provider = cmbProvider.SelectedIndex + 1;
 				PRO.id_type = cmbType.SelectedIndex + 1;
 				PRO.id_discount = cmbDiscount.SelectedIndex + 1;
-				PRO.Price = Convert.ToDecimal(tbPrice.Text);
+				PRO.Price = Convert.ToInt32(tbPrice.Text);
 				//PRO.Photo = path;
 
 				// если флаг равен false, то добавляем объект в базу

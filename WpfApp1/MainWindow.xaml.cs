@@ -24,7 +24,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            ClassBase.BD = new Entities6();
+            ClassBase.BD = new Entities8();
             Class1.Mfrm = frm;
             Class1.Mfrm.Navigate(new Autorizaciya());
         }

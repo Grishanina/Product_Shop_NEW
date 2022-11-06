@@ -19,7 +19,7 @@
         <Image Grid.Row="0" Grid.Column="0" Source="Resource\05-08b19b4b_photo-resizer.ru.png" Width="80" Height="60" Margin="17,10,0,0"></Image>
         <TextBlock Grid.Row="0" Grid.Column="1" Margin="18" Style="{StaticResource tbName}">Продуктовый магазин "Ягодка"</TextBlock>
 
-        <Frame Name="frm" Grid.Row="1" Grid.Column="1" NavigationUIVisibility="Hidden">
+        <Frame Name="frm" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" NavigationUIVisibility="Hidden">
         </Frame>
     </Grid>
 </Window>

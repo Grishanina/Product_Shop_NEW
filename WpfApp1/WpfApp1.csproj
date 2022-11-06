@@ -66,7 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="Class1.cs" />
     <Compile Include="ClassBase.cs" />
-    <Compile Include="CreateProduct.xaml.cs">
+    <Compile Include="Pages\CreateProduct.xaml.cs">
       <DependentUpon>CreateProduct.xaml</DependentUpon>
     </Compile>
     <Compile Include="Discount_Color.cs" />
@@ -136,7 +136,7 @@
     <Compile Include="T_Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Page Include="CreateProduct.xaml">
+    <Page Include="Pages\CreateProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

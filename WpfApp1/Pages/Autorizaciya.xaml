@@ -15,7 +15,7 @@
                     <TextBox x:Name="tblogin"></TextBox>
                 </GroupBox>
                 <GroupBox Header="Пароль" Height="60" Width="250" Margin="0, 10, 0, 0">
-                    <PasswordBox x:Name="pbpas"></PasswordBox>
+                    <PasswordBox x:Name="pbpas" Height="26"></PasswordBox>
                 </GroupBox>
 
                 <Button x:Name="Btn2" Margin="0, 50, 0, 0" Style="{StaticResource Auto}" Width="200" Height="40" Click="Btn2_Click">Авторизация</Button>

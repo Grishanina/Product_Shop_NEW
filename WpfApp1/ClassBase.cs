@@ -8,6 +8,6 @@ namespace WpfApp1
 {
     internal class ClassBase
     {
-        public static Entities6 BD;
+        public static Entities8 BD;
     }
 }

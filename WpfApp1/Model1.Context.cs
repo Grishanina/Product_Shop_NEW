@@ -13,10 +13,10 @@ namespace WpfApp1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities6 : DbContext
+    public partial class Entities8 : DbContext
     {
-        public Entities6()
-            : base("name=Entities6")
+        public Entities8()
+            : base("name=Entities8")
         {
         }
     

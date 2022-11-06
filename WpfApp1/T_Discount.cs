@@ -21,7 +21,7 @@ namespace WpfApp1
         }
     
         public int id_discount { get; set; }
-        public decimal Discount { get; set; }
+        public double Discount { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<T_Product> T_Product { get; set; }

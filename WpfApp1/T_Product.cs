@@ -26,7 +26,7 @@ namespace WpfApp1
         public int id_type { get; set; }
         public int id_provider { get; set; }
         public int id_discount { get; set; }
-        public decimal Price { get; set; }
+        public int Price { get; set; }
     
         public virtual T_Discount T_Discount { get; set; }
         public virtual T_Manufacturer T_Manufacturer { get; set; }
